@@ -6,10 +6,10 @@ public class MyStackMain {
 		MinStack minStack = new MinStack();
 		minStack.push(-2);
 		minStack.push(0);
-		minStack.push(-3);
+		minStack.push(-1);
 		System.out.println(minStack.getMin());  // --> Returns -3.
-		minStack.pop();
 		System.out.println(minStack.top());     // --> Returns 0.
+		minStack.pop();
 		System.out.println(minStack.getMin());  // --> Returns -2.
 	}
 

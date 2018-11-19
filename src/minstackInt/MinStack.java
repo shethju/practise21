@@ -19,7 +19,7 @@ class MinStack {
 			tos = tmp;
 			tmp.setMinValue(t);
 		} else {
-			if (t < tos.getValue()) {
+			if (t < tos.getMinValue()) {
 				tmp.setMinValue(t);
 			} else {
 				tmp.setMinValue(tos.getMinValue());
@@ -40,8 +40,7 @@ class MinStack {
 	}
 
 	int getMin() {
-        Integer integer = (empty()) ? null : tos.getMinValue();
-        return integer;
+		return (empty()) ? null : tos.getMinValue();
 	}
 	
 	void print() {
