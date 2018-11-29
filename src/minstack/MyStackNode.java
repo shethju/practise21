@@ -10,7 +10,7 @@ public class MyStackNode<T extends Comparable<T>>{
 		this.minValue = minValue;
 	}
 	public MyStackNode<T> nextNode = null;
-	public MyStackNode(T tValue) { // new MyStackNode<T>(t); 
+	public MyStackNode(T tValue) { // new Node<T>(t);
 		t = tValue;
 	}
 	public T getValue() { return t; }
